@@ -204,3 +204,10 @@ header .menu {
   span{
     color: #eea16d;
   }
+  .logo h1 {
+    color: white;
+    text-decoration: none;
+  }
+  .logo a {
+    text-decoration: none !important;
+  }
