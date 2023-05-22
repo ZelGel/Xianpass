@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+
 body {
     background-color: #191513;
-    position:relative;
+    position: relative;
 }
-span{
+
+span {
     color: #eea16d;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -18,29 +22,34 @@ header {
     padding: 0 10%;
     height: 80px;
 }
+
 header .logo {
     color: #fff;
-
 }
+
 header .menu {
     display: flex;
     align-items: center;
 }
+
 header .menu li {
     margin: 0 15px;
     list-style: none;
 }
+
 header .menu li a {
     color: #999;
-    text-decoration: 0;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    position:relative;
+    position: relative;
 }
+
 header .menu li a:hover {
     color: #fff;
     font-size: 18px;
 }
+
 header .menu li a::before {
     position: absolute;
     bottom: -5px;
@@ -55,5 +64,78 @@ header .menu li a::before {
 header .menu li a:hover:before {
     width: 100%;
 }
+
+.intro {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #eea16d;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.intro ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.intro ul li::before {
+    content: '►';
+    color: #eea16d;
+    margin-right: 10px;
+}
+
+.intro p:first-child {
+    font-weight: bold;
+}
+
+.intro a {
+    color: #eea16d;
+    transition: color 0.3s ease;
+}
+
+.intro a:hover {
+    color: #fff;
+}
+
+.intro .container {
+    animation: fade-in 1s ease;
+}
+
+.intro img {
+    width: 200px;
+    margin: 20px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
