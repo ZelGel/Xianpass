@@ -63,7 +63,11 @@
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Mot de passe" />
-            </div>
+              <div class="input-field">
+                <i class="fas fa-check"></i>
+                <input type="password" id="confirmation" placeholder="Confirmation mot de passe" onkeyup="verifierMotDePasse()" />
+                <span id="confirmationIcon"></span> <!-- Icône de confirmation -->
+              </div>
             <input type="submit" class="btn" value="Inscription" />
             <p class="social-text">Nous contacter</p>
             <div class="social-media">
